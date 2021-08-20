@@ -176,11 +176,11 @@ footer {
 
 /* Start of MSPDCL Theme */
 .mspdcl-navbar {
-  background: url("../images/menu.png") repeat-x;
+  background: url("images/menu.png") repeat-x;
 }
 
 .mspdcl-h1 {
-  background: url("../images/menu.png") repeat-x;
+  background: url("images/menu.png") repeat-x;
   border-radius: 5px;
 }
 
@@ -189,7 +189,7 @@ footer {
 }
 
 .mspdcl-h3 {
-  background: url("../images/label.png") repeat-y;
+  background: url("images/label.png") repeat-y;
   border: none;
   text-transform: initial;
   font-weight: 400;
