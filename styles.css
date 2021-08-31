@@ -9,6 +9,12 @@ html {
   font-size: 15px;
 }
 
+.header {
+  position: relative;
+  background: url("./images/Header_background.jpg") center center no-repeat;
+  background-size: cover;
+}
+
 .gallery {
   height: 60vh;
   background: url("https://images.unsplash.com/photo-1560493676-04071c5f467b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1568&q=80") center center no-repeat;
