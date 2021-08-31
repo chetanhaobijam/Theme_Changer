@@ -1,4 +1,4 @@
-// Variable Declarations
+// VARIABLE DECLARATIONS
 const navbar = document.querySelector(".navbar");
 const main = document.querySelector("main");
 const article = document.querySelectorAll("article");
@@ -23,6 +23,12 @@ const zeroLevel = document.querySelector("#zeroLevel");
 const plusOneLevel = document.querySelector("#plusOneLevel");
 const plusTwoLevel = document.querySelector("#plusTwoLevel");
 
+let contrastColors = [
+  "rgb(72, 202, 228)", "rgb(144, 224, 239)", "rgb(173, 232, 244)", "rgb(202, 240, 248)", "rgb(255, 255, 255)", "rgb(233, 236, 239)", "rgb(222, 226, 230)", "rgb(206, 212, 218)", "rgb(173, 181, 189)"
+];
+// ============================================================
+
+// FUNCTIONS
 // Function to add Agri Theme
 const addAgriTheme = () => {
   navbar.classList.add("agri-navbar");
@@ -168,18 +174,28 @@ const removeMspdclTheme = () => {
 }
 
 // Function to Increase or Decrease Font Size
-const changeFontSize = (element, factor) => {
-  let style = window.getComputedStyle(element, null).getPropertyValue('font-size');
+const changeFontSize = (factor) => {
+  let style = window.getComputedStyle(html, null).getPropertyValue('font-size');
   let currentSize = parseFloat(style);
-  element.style.fontSize = (currentSize + factor) + 'px';
+  html.style.fontSize = (currentSize + factor) + 'px';
 }
 
-// Minus Two Contrast Level
-const changeContrast = color => {
-  body.style.background = color;
+// Function to Reduce Contrast
+const reduceContrast = (factor) => {
+  let bodyColor = body.style.background;
+  let index = contrastColors.indexOf(bodyColor);
+  body.style.background = contrastColors[index - factor];
 }
 
-// Event Listeners
+// Function to Add Contrast
+const addContrast = (factor) => {
+  let bodyColor = body.style.background;
+  let index = contrastColors.indexOf(bodyColor);
+  body.style.background = contrastColors[index + factor];
+}
+// =======================================================
+
+// EVENT LISTENERS
 // When clicked at Police Theme
 agriTheme.addEventListener("click", () => {
   removePoliceTheme();
@@ -212,35 +228,40 @@ original.addEventListener("click", () => {
 
 // Decrease the font-size when clicked
 decrease.addEventListener("click", () => {
-  changeFontSize(html, -1);
+  if(currentSize > 10) {
+    changeFontSize(html, -1);
+  }
 })
 
 // Turn the Contrast to Minus 2 when clicked
 minusTwoLevel.addEventListener("click", () => {
-  changeContrast("#6bcee0");
+  reduceContrast(2);
 })
 
 // Turn the Contrast to Minus 1 when clicked
 minusOneLevel.addEventListener("click", () => {
-  changeContrast("#a9e7f2");
+  reduceContrast(1);
 })
 
 // Turn the Contrast to Zero when clicked
 zeroLevel.addEventListener("click", () => {
-  changeContrast("#fff");
+  body.style.background = contrastColors[4];
 })
 
 // Turn the Contrast to Plus 1 when clicked
 plusOneLevel.addEventListener("click", () => {
-  changeContrast("#efe8e8");
+  addContrast(1);
 })
 
 // Turn the Contrast to Plus 2 when clicked
 plusTwoLevel.addEventListener("click", () => {
-  changeContrast("#cccccc");
+  addContrast(2);
 })
 
 
+// =======================================================
 
-// Start Up Function
+
+// START UP FUNCTION
 addAgriTheme();
+body.style.background = contrastColors[4];
