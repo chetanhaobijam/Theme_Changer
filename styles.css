@@ -112,6 +112,7 @@ footer {
 
 .agri-ul {
   padding: 0 7.5px;
+  background-color: #fff;
 }
 
 .agri-li {
@@ -152,6 +153,7 @@ footer {
 .police-ul {
   padding: 0;
   margin-top: 15px;
+  background-color: #fff;
 }
 
 .police-li {
@@ -214,6 +216,7 @@ footer {
   margin: 7.5px;
   border-radius: 5px;
   padding: 7.5px;
+  background-color: #fff;
 }
 
 .mspdcl-li:hover {

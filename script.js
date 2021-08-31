@@ -13,9 +13,15 @@ const agriTheme = document.querySelector("#agriTheme");
 const policeTheme = document.querySelector("#policeTheme");
 const mspdclTheme = document.querySelector("#mspdclTheme");
 const html = document.querySelector("html");
+const body = document.querySelector("body");
 const decrease = document.querySelector("#fontDecrease");
 const original = document.querySelector("#fontOriginal");
 const increase = document.querySelector("#fontIncrease");
+const minusTwoLevel = document.querySelector("#minusTwoLevel");
+const minusOneLevel = document.querySelector("#minusOneLevel");
+const zeroLevel = document.querySelector("#zeroLevel");
+const plusOneLevel = document.querySelector("#plusOneLevel");
+const plusTwoLevel = document.querySelector("#plusTwoLevel");
 
 // Function to add Agri Theme
 const addAgriTheme = () => {
@@ -168,20 +174,10 @@ const changeFontSize = (element, factor) => {
   element.style.fontSize = (currentSize + factor) + 'px';
 }
 
-// Increase the font-size when clicked
-increase.addEventListener("click", () => {
-  changeFontSize(html, 1);
-})
-
-//Set the default font-size when clicked 
-original.addEventListener("click", () => {
-  html.style.setProperty("font-size", "15px");
-})
-
-// Decrease the font-size when clicked
-decrease.addEventListener("click", () => {
-  changeFontSize(html, -1);
-})
+// Minus Two Contrast Level
+const changeContrast = color => {
+  body.style.background = color;
+}
 
 // Event Listeners
 // When clicked at Police Theme
@@ -203,6 +199,48 @@ mspdclTheme.addEventListener("click", () => {
   removePoliceTheme();
   addMspdclTheme();
 })
+
+// Increase the font-size when clicked
+increase.addEventListener("click", () => {
+  changeFontSize(html, 1);
+})
+
+//Set the default font-size when clicked 
+original.addEventListener("click", () => {
+  html.style.setProperty("font-size", "15px");
+})
+
+// Decrease the font-size when clicked
+decrease.addEventListener("click", () => {
+  changeFontSize(html, -1);
+})
+
+// Turn the Contrast to Minus 2 when clicked
+minusTwoLevel.addEventListener("click", () => {
+  changeContrast("#6bcee0");
+})
+
+// Turn the Contrast to Minus 1 when clicked
+minusOneLevel.addEventListener("click", () => {
+  changeContrast("#a9e7f2");
+})
+
+// Turn the Contrast to Zero when clicked
+zeroLevel.addEventListener("click", () => {
+  changeContrast("#fff");
+})
+
+// Turn the Contrast to Plus 1 when clicked
+plusOneLevel.addEventListener("click", () => {
+  changeContrast("#efe8e8");
+})
+
+// Turn the Contrast to Plus 2 when clicked
+plusTwoLevel.addEventListener("click", () => {
+  changeContrast("#cccccc");
+})
+
+
 
 // Start Up Function
 addAgriTheme();
