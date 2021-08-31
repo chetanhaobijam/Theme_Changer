@@ -24,23 +24,23 @@ html {
 .grid-body {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  gap: 2rem;
-  padding: 2rem;
+  gap: 30px;
+  padding: 30px;
 }
 
 h1, h3 {
   color: #fff;
   font-weight: 300;
-  font-size: 1.5rem;
-  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  font-size: 22.5px;
+  padding: 7.5px 7.5px 7.5px 15px;
 }
 
 h3 {
-  font-size: 1.1rem;
+  font-size: 16.5px;
 }
 
 article, main {
-  margin-bottom: 1rem;
+  margin-bottom: 15px;
 }
 
 article {
@@ -48,7 +48,7 @@ article {
 }
 
 p {
-  padding: 0 1rem;
+  padding: 0 15px;
   text-align: justify;
 }
 
@@ -62,7 +62,7 @@ article li {
 
 main button, article button {
   outline: none;
-  padding: 0.5rem;
+  padding: 7.5px;
   border-radius: 5px;
   opacity: 0.9;
 }
@@ -76,12 +76,12 @@ button:focus {
 }
 
 main button {
-  margin-left: 1rem;
+  margin-left: 15px;
 }
 
 footer {
   color: #fff;
-  padding: 1rem;
+  padding: 15px;
   text-align: center;
 }
 
@@ -97,7 +97,7 @@ footer {
 }
 
 .agri-article, .agri-main {
-  padding: 0.5rem;
+  padding: 7.5px;
 }
 
 .agri-button {
@@ -111,11 +111,11 @@ footer {
 }
 
 .agri-ul {
-  padding: 0 0.5rem;
+  padding: 0 7.5px;
 }
 
 .agri-li {
-  padding: 0.3rem 0;
+  padding: 4.5px 0;
   color: var(--blue);
   border: none;
 }
@@ -132,7 +132,7 @@ footer {
 
 /* Start of Police Theme */
 .police-navbar {
-  background: #fd7331
+  background: #fd7331;
 }
 
 .police-h1, .police-h3 {
@@ -151,13 +151,13 @@ footer {
 
 .police-ul {
   padding: 0;
-  margin-top: 1rem;
+  margin-top: 15px;
 }
 
 .police-li {
   border: 1px solid #cecece;
   color: #333;
-  padding: 0.5rem 1rem;
+  padding: 7.5px 15px;
 }
 
 .police-li:hover {
@@ -202,18 +202,18 @@ footer {
 }
 
 .mspdcl-ul {
-  margin-top: -1.5rem;
-  margin-left: 0.5rem;
+  margin-top: -22.5px;
+  margin-left: 7.5px;
   box-shadow: 0 0 3px 1px rgb(0 0 0 / 20%);
-  padding: 1.5rem 0 0.1rem;
+  padding: 22.5px 0 1.5px;
 }
 
 .mspdcl-li {
   border: none;
   color: #337ab7;
-  margin: 0.5rem;
+  margin: 7.5px;
   border-radius: 5px;
-  padding: 0.5rem;
+  padding: 7.5px;
 }
 
 .mspdcl-li:hover {
