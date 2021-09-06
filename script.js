@@ -174,10 +174,43 @@ const removeMspdclTheme = () => {
 }
 
 // Function to Increase or Decrease Font Size
-const changeFontSize = (factor) => {
-  let style = window.getComputedStyle(html, null).getPropertyValue('font-size');
-  let currentSize = parseFloat(style);
-  html.style.fontSize = (currentSize + factor) + 'px';
+let defaultFontSize = $('html').css('font-size');
+const minSize = parseFloat(defaultFontSize, 12) - 3;
+const maxSize = parseFloat(defaultFontSize, 12) + 3;
+
+$(original).click(function () {
+    $('html').css('font-size', defaultFontSize);
+});
+
+$(increase).click(function () {
+    let fontSize = getFontSize();
+    let newFontSize = fontSize + 1;
+    if (newFontSize <= maxSize) setFontSize(newFontSize);
+    return false;
+});
+
+$(decrease).click(function () {
+    let fontSize = getFontSize();
+    let newFontSize = fontSize - 1;
+    if (newFontSize >= minSize) setFontSize(newFontSize);
+    return false;
+});
+
+function getFontSize() {
+    let currentSize = $("html").css("font-size");
+    let currentSizeNumber = parseFloat(currentSize, 12);
+    if (currentSizeNumber > 24) {
+        currentSizeNumber = 24;
+    }
+    if (currentSizeNumber < 10) {
+        currentSizeNumber = 10;
+    }
+    return currentSizeNumber;
+}
+
+function setFontSize(size) {
+    $("html").css("font-size", size);
+    $(".actualSize").html(size);
 }
 
 // Function to Reduce Contrast
@@ -210,27 +243,11 @@ policeTheme.addEventListener("click", () => {
   addPoliceTheme();
 });
 
+// When clicked at MSPDCL Theme
 mspdclTheme.addEventListener("click", () => {
   removeAgriTheme();
   removePoliceTheme();
   addMspdclTheme();
-})
-
-// Increase the font-size when clicked
-increase.addEventListener("click", () => {
-  changeFontSize(html, 1);
-})
-
-//Set the default font-size when clicked 
-original.addEventListener("click", () => {
-  html.style.setProperty("font-size", "15px");
-})
-
-// Decrease the font-size when clicked
-decrease.addEventListener("click", () => {
-  if(currentSize > 10) {
-    changeFontSize(html, -1);
-  }
 })
 
 // Turn the Contrast to Minus 2 when clicked
