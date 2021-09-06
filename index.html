@@ -13,10 +13,10 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+  <!-- Accessibility Section -->
   <section class="accessibility">
-    <a class="skip-main" href="#main">Skip to Main Content</a>
-    <div class="change-theme dropdown">
+    <a class="skip-main mr-3" href="#main">Skip to Main Content</a>
+    <div class="change-theme dropdown mr-3">
       <button class="dropdown-toggle" id="dropdownTheme" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Change Theme</button>
 
       <div class="dropdown-menu" aria-labelledby="dropdownTheme">
@@ -25,10 +25,15 @@
         <a class="dropdown-item" id="mspdclTheme" href="#">MSPDCL Theme</a>
       </div>
     </div>
-    <div class="change-contrast">
+    <div class="change-contrast mr-3">
+      <label for="contrast-range">Contrast Level: <span id="contrast-level">0</span></label>
       <input type="range" name="contrast-range" id="contrast-range" min="-4" max="4" value="0" step="1">
     </div>
-    <div></div>
+    <div class="fontSize-controls">
+      <a href="#" id="fontDecrease">A-</a>
+      <a href="#" id="fontOriginal">A</a>
+      <a href="#" id="fontIncrease">A+</a>
+    </div>
   </section>
 
   <header class="header">
@@ -44,41 +49,8 @@
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto mr-5">
-        <!-- Dropdown to Change Theme -->
-        <li class="nav-item dropdown active">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Change Theme
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" id="agriTheme" href="#">Agri Theme</a>
-            <a class="dropdown-item" id="policeTheme" href="#">Police Theme</a>
-            <a class="dropdown-item" id="mspdclTheme" href="#">MSPDCL Theme</a>
-          </div>
-        </li>
-
-        <!-- Dropdown to Change Contrast -->
-        <li class="nav-item dropdown active">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Contrast Level
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" id="minusTwoLevel" href="#">-2</a>
-            <a class="dropdown-item" id="minusOneLevel" href="#">-1</a>
-            <a class="dropdown-item" id="zeroLevel" href="#">00</a>
-            <a class="dropdown-item" id="plusOneLevel" href="#">+1</a>
-            <a class="dropdown-item" id="plusTwoLevel" href="#">+2</a>
-          </div>
-        </li>
-
-        <!-- Buttons/List to Change Font Size -->
-        <li class="nav-item active" id="fontDecrease">
-          <a href="#" class="nav-link">A-</a>
-        </li>
-        <li class="nav-item active" id="fontOriginal">
-          <a href="#" class="nav-link">A</a>
-        </li>
-        <li class="nav-item active" id="fontIncrease">
-          <a href="#" class="nav-link">A+</a>
+        <li class="nav-item active">
+          <a href="#" class="nav-link">Home</a>
         </li>
       </ul>
     </div>
