@@ -14,6 +14,23 @@
 </head>
 <body>
 
+  <section class="accessibility">
+    <a class="skip-main" href="#main">Skip to Main Content</a>
+    <div class="change-theme dropdown">
+      <button class="dropdown-toggle" id="dropdownTheme" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Change Theme</button>
+
+      <div class="dropdown-menu" aria-labelledby="dropdownTheme">
+        <a class="dropdown-item" id="agriTheme" href="#">Agri Theme</a>
+        <a class="dropdown-item" id="policeTheme" href="#">Police Theme</a>
+        <a class="dropdown-item" id="mspdclTheme" href="#">MSPDCL Theme</a>
+      </div>
+    </div>
+    <div class="change-contrast">
+      <input type="range" name="contrast-range" id="contrast-range" min="-4" max="4" value="0" step="1">
+    </div>
+    <div></div>
+  </section>
+
   <header class="header">
     <img src="images/title.png" alt="Header Title">
   </header>
@@ -52,19 +69,6 @@
             <a class="dropdown-item" id="plusTwoLevel" href="#">+2</a>
           </div>
         </li>
-
-
-        <!-- Dropdown to Change Font Size -->
-        <!-- <li class="nav-item dropdown active">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Change Font Size
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" id="fontDecrease" href="#">Decrease Size</a>
-            <a class="dropdown-item" id="fontOriginal" href="#">Original Size</a>
-            <a class="dropdown-item" id="fontIncrease" href="#">Increase Size</a>
-          </div>
-        </li> -->
 
         <!-- Buttons/List to Change Font Size -->
         <li class="nav-item active" id="fontDecrease">
@@ -123,7 +127,7 @@
         <button class="button">Read More</button>
       </article>
     </aside>
-    <main class="main">
+    <main class="main" id="main">
       <h1>Birth of Agriculture Department</h1>
       <p>The Department of Agriculture, Manipur was emerged in March 1946 with a skeleton staff consisting of about a dozen members only headed by an Agriculture Officer in a small building at Babupara, Imphal. With the lunching of “Grow More Food Campaign” under Ministry of Food and Agriculture, Government of India a separate Food Production Office was established in September 1950 with the objective of popularizing double cropping in all suitable areas state in both Hills and Valley. The gradual increase of the staff strength to cop with the increasing volume of work of the Department, the State Government recognized the felt need of strengthening the Department that necessitated the creation of a post of Director of Agriculture, Manipur along with supporting staff during 1954. After 37 years of existence, Agriculture Department becomes a major department in the year 1983 wit....</p>
       <button class="button">Read More</button>

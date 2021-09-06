@@ -17,6 +17,7 @@ const body = document.querySelector("body");
 const decrease = document.querySelector("#fontDecrease");
 const original = document.querySelector("#fontOriginal");
 const increase = document.querySelector("#fontIncrease");
+const contrastRangeInput = document.querySelector("#contrast-range");
 const minusTwoLevel = document.querySelector("#minusTwoLevel");
 const minusOneLevel = document.querySelector("#minusOneLevel");
 const zeroLevel = document.querySelector("#zeroLevel");
@@ -226,6 +227,40 @@ const addContrast = (factor) => {
   let index = contrastColors.indexOf(bodyColor);
   body.style.background = contrastColors[index + factor];
 }
+
+// Function to Change Contrast Based on Range Input
+const changeContrastOnRange = () => {
+  let rangeValue = contrastRangeInput.value;
+  switch(rangeValue) {
+    case "-4":
+      body.style.background = contrastColors[0];
+      break;
+    case "-3":
+      body.style.background = contrastColors[1];
+      break;
+    case "-2":
+      body.style.background = contrastColors[2];
+      break;
+    case "-1":
+      body.style.background = contrastColors[3];
+      break;
+    case "0":
+      body.style.background = contrastColors[4];
+      break;
+    case "1":
+      body.style.background = contrastColors[5];
+      break;
+    case "2":
+      body.style.background = contrastColors[6];
+      break;
+    case "3":
+      body.style.background = contrastColors[7];
+      break;
+    case "4":
+      body.style.background = contrastColors[8];
+      break;
+  }
+}
 // =======================================================
 
 // EVENT LISTENERS
@@ -275,7 +310,11 @@ plusTwoLevel.addEventListener("click", () => {
   addContrast(2);
 })
 
-
+// Change the Contrast According to the Range
+contrastRangeInput.addEventListener("input", () => {
+  changeContrastOnRange();
+  console.log(contrastRangeInput.value);
+})
 // =======================================================
 
 
