@@ -17,6 +17,7 @@ const body = document.querySelector("body");
 const decrease = document.querySelector("#fontDecrease");
 const original = document.querySelector("#fontOriginal");
 const increase = document.querySelector("#fontIncrease");
+const contrastLevelLabel = document.querySelector(".change-contrast label");
 const contrastRangeInput = document.querySelector("#contrast-range");
 const contrastLevel = document.querySelector("#contrast-level");
 const minusTwoLevel = document.querySelector("#minusTwoLevel");
@@ -290,6 +291,11 @@ mspdclTheme.addEventListener("click", () => {
 contrastRangeInput.addEventListener("input", () => {
   changeContrastOnRange();
   contrastLevel.textContent = contrastRangeInput.value;
+})
+
+//Toggle the Display of Contrast Range when clicked on its Label
+contrastLevelLabel.addEventListener("click", () => {
+  contrastRangeInput.classList.toggle("show");
 })
 // =======================================================
 

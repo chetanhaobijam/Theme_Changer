@@ -13,7 +13,16 @@ html {
 .accessibility {
   display: flex;
   justify-content: flex-end;
-  padding: 15px;
+  padding: 10px;
+  color: #333;
+}
+
+.skip-main {
+  color: #333;
+}
+
+.skip-main:hover {
+  color: #333;
 }
 
 .change-theme button {
@@ -25,10 +34,21 @@ html {
 .change-contrast {
   display: flex;
   flex-direction: column;
+  width: 17ch;
 }
 
 .change-contrast label {
   text-align: center;
+  cursor: pointer;
+}
+
+.change-contrast label svg {
+  width: 12px;
+  padding-bottom: 3px;
+}
+
+.contrast-range {
+  display: none;
 }
 
 #contrast-range {
@@ -53,7 +73,7 @@ html {
   width: 20px;
   height: 15px;
   border-radius: 5px;
-  background: #04AA6D;
+  background: var(--primary);
   cursor: pointer;
 }
 
@@ -61,8 +81,18 @@ html {
   width: 20px;
   height: 15px;
   border-radius: 50%;
-  background: #04AA6D;
+  background: var(--primary);
   cursor: pointer;
+}
+
+.fontSize-controls a {
+  color: #fff;
+  border-radius: 5px;
+  width: 50px;
+}
+
+.fontSize-controls a:hover {
+  text-decoration: none;
 }
 
 .header {
@@ -295,3 +325,8 @@ footer {
   background-color: #0d72b1;
 }
 /* End of MSPDCL Theme */
+
+/* Javascript Styles */
+.show {
+  display: block;
+}

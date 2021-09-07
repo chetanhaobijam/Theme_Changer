@@ -26,13 +26,18 @@
       </div>
     </div>
     <div class="change-contrast mr-3">
-      <label for="contrast-range">Contrast Level: <span id="contrast-level">0</span></label>
-      <input type="range" name="contrast-range" id="contrast-range" min="-4" max="4" value="0" step="1">
+      <label for="contrast-range">Contrast Level: 
+        <span id="contrast-level">0</span> 
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+          <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+        </svg>
+      </label>
+      <input type="range" name="contrast-range" id="contrast-range" class="contrast-range" min="-4" max="4" value="0" step="1">
     </div>
     <div class="fontSize-controls">
-      <a href="#" id="fontDecrease">A-</a>
-      <a href="#" id="fontOriginal">A</a>
-      <a href="#" id="fontIncrease">A+</a>
+      <a href="#" id="fontDecrease" class="btn btn-secondary">A-</a>
+      <a href="#" id="fontOriginal" class="btn btn-secondary">A</a>
+      <a href="#" id="fontIncrease" class="btn btn-secondary">A+</a>
     </div>
   </section>
 
