@@ -21,42 +21,41 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Accessibility Section -->
-  <section class="accessibility">
-    <a class="skip-main mr-3" href="#main">Skip to Main Content</a>
-    <div class="change-theme dropdown mr-3">
-      <button class="dropdown-toggle" id="dropdownTheme" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Change Theme</button>
-
-      <div class="dropdown-menu" aria-labelledby="dropdownTheme">
-        <a class="dropdown-item" id="agriTheme" href="#">Agri Theme</a>
-        <a class="dropdown-item" id="policeTheme" href="#">Police Theme</a>
-        <a class="dropdown-item" id="mspdclTheme" href="#">MSPDCL Theme</a>
-      </div>
-    </div>
-    <div class="change-contrast mr-3">
-      <label for="contrast-range">Contrast Level: 
-        <span id="contrast-level">0</span> 
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-          <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-        </svg>
-      </label>
-      <input type="range" name="contrast-range" id="contrast-range" class="contrast-range" min="-4" max="4" value="0" step="1">
-    </div>
-    <div class="fontSize-controls mr-2">
-      <a href="#" id="fontDecrease" class="btn btn-dark">A-</a>
-      <a href="#" id="fontOriginal" class="btn btn-dark">A</a>
-      <a href="#" id="fontIncrease" class="btn btn-dark">A+</a>
-    </div>
-    <div class="darkmode-control">
-      <a href="#" id="dark-mode-button" class="btn btn-dark">
-        <i class="fas fa-adjust"></i>
-      </a>
-      
-    </div>
-  </section>
-
   <header class="header inverted">
     <img src="images/title.png" alt="Header Title">
+
+    <!-- Accessibility Section -->
+    <section class="accessibility">
+      <a class="skip-main mr-2" href="#main">Skip to Main Content</a>
+      <div class="change-theme dropdown mr-2">
+        <button class="dropdown-toggle" id="dropdownTheme" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Change Theme</button>
+
+        <div class="dropdown-menu" aria-labelledby="dropdownTheme">
+          <a class="dropdown-item" id="agriTheme" href="#">Agri Theme</a>
+          <a class="dropdown-item" id="policeTheme" href="#">Police Theme</a>
+          <a class="dropdown-item" id="mspdclTheme" href="#">MSPDCL Theme</a>
+        </div>
+      </div>
+      <div class="change-contrast mr-2">
+        <label for="contrast-range">Contrast Level: 
+          <span id="contrast-level">0</span> 
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+          </svg>
+        </label>
+        <input type="range" name="contrast-range" id="contrast-range" class="contrast-range" min="-4" max="4" value="0" step="1">
+      </div>
+      <div class="fontSize-controls mr-2">
+        <a href="#" id="fontDecrease" class="btn btn-dark">A-</a>
+        <a href="#" id="fontOriginal" class="btn btn-dark">A</a>
+        <a href="#" id="fontIncrease" class="btn btn-dark">A+</a>
+      </div>
+      <div class="darkmode-control">
+        <a href="#" id="dark-mode-button" class="btn btn-dark">
+          <i class="fas fa-adjust"></i>
+        </a>
+      </div>
+    </section>
   </header>
 
   <!-- Navigation Bar -->

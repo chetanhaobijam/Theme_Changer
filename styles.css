@@ -10,11 +10,29 @@ html {
   scroll-behavior: smooth;
 }
 
+.header {
+  position: relative;
+  background: url("./images/Header_background.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.header img {
+  max-height: 150px;
+}
+
 .accessibility {
   display: flex;
   justify-content: flex-end;
   padding: 10px;
   color: #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.4;
+}
+
+.accessibility:hover {
+  opacity: 1
 }
 
 .skip-main {
@@ -93,12 +111,6 @@ html {
 
 .fontSize-controls a:hover, .darkmode-control a:hover {
   text-decoration: none;
-}
-
-.header {
-  position: relative;
-  background: url("./images/Header_background.jpg") center center no-repeat;
-  background-size: cover;
 }
 
 .gallery {

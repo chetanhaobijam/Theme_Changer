@@ -17,6 +17,7 @@ const body = document.querySelector("body");
 const decrease = document.querySelector("#fontDecrease");
 const original = document.querySelector("#fontOriginal");
 const increase = document.querySelector("#fontIncrease");
+const changeContrast = document.querySelector(".change-contrast");
 const contrastLevelLabel = document.querySelector(".change-contrast label");
 const contrastRangeInput = document.querySelector("#contrast-range");
 const contrastLevel = document.querySelector("#contrast-level");
@@ -290,10 +291,15 @@ contrastRangeInput.addEventListener("input", () => {
   contrastLevel.textContent = contrastRangeInput.value;
 })
 
-//Toggle the Display of Contrast Range when clicked on its Label
-contrastLevelLabel.addEventListener("click", () => {
-  contrastRangeInput.classList.toggle("show");
+//Toggle the Display of Contrast Range
+changeContrast.addEventListener("mouseover", () => {
+  contrastRangeInput.classList.add("show");
 })
+
+changeContrast.addEventListener("mouseleave", () => {
+  contrastRangeInput.classList.remove("show");
+})
+
 
 // Toggle the Dark Mode On or Off
 darkModeBtn.addEventListener("click", () => {
