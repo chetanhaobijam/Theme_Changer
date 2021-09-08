@@ -20,11 +20,8 @@ const increase = document.querySelector("#fontIncrease");
 const contrastLevelLabel = document.querySelector(".change-contrast label");
 const contrastRangeInput = document.querySelector("#contrast-range");
 const contrastLevel = document.querySelector("#contrast-level");
-const minusTwoLevel = document.querySelector("#minusTwoLevel");
-const minusOneLevel = document.querySelector("#minusOneLevel");
-const zeroLevel = document.querySelector("#zeroLevel");
-const plusOneLevel = document.querySelector("#plusOneLevel");
-const plusTwoLevel = document.querySelector("#plusTwoLevel");
+const darkModeBtn = document.querySelector("#dark-mode-button");
+
 
 let contrastColors = [
   "rgb(72, 202, 228)", "rgb(144, 224, 239)", "rgb(173, 232, 244)", "rgb(202, 240, 248)", "rgb(255, 255, 255)", "rgb(233, 236, 239)", "rgb(222, 226, 230)", "rgb(206, 212, 218)", "rgb(173, 181, 189)"
@@ -296,6 +293,15 @@ contrastRangeInput.addEventListener("input", () => {
 //Toggle the Display of Contrast Range when clicked on its Label
 contrastLevelLabel.addEventListener("click", () => {
   contrastRangeInput.classList.toggle("show");
+})
+
+// Toggle the Dark Mode On or Off
+darkModeBtn.addEventListener("click", () => {
+  document.documentElement.classList.toggle("dark-mode");
+
+  document.querySelectorAll(".inverted").forEach(result => {
+    result.classList.toggle("invert");
+  })
 })
 // =======================================================
 

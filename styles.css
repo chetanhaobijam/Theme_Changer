@@ -14,15 +14,15 @@ html {
   display: flex;
   justify-content: flex-end;
   padding: 10px;
-  color: #333;
+  color: #000;
 }
 
 .skip-main {
-  color: #333;
+  color: #000;
 }
 
 .skip-main:hover {
-  color: #333;
+  color: #000;
 }
 
 .change-theme button {
@@ -85,13 +85,13 @@ html {
   cursor: pointer;
 }
 
-.fontSize-controls a {
+.fontSize-controls a, .darkmode-control a {
   color: #fff;
   border-radius: 5px;
   width: 50px;
 }
 
-.fontSize-controls a:hover {
+.fontSize-controls a:hover, .darkmode-control a:hover {
   text-decoration: none;
 }
 
@@ -244,7 +244,7 @@ footer {
 
 .police-li {
   border: 1px solid #cecece;
-  color: #333;
+  color: #000;
   padding: 7.5px 15px;
 }
 
@@ -329,4 +329,12 @@ footer {
 /* Javascript Styles */
 .show {
   display: block;
+}
+
+.dark-mode {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.invert {
+  filter: invert(1) hue-rotate(180deg);
 }
