@@ -1,0 +1,61 @@
+.agri {
+  .navbar {
+    background: var(--success);
+  }
+  .grid-body {
+    article {
+      padding: 7.5px;
+  
+      h3 {
+        background: linear-gradient(to left, #a8e063 20%, #56ab2f);
+      }
+  
+      button {
+        border: 2px solid var(--danger);
+        background-color: var(--danger);
+        color: #fff;
+        &:hover {
+          color: var(--danger);
+        }
+      }
+  
+      ul {
+        padding: 0 7.5px;
+        background-color: #fff;
+      }
+  
+      li {
+        padding: 4.5px 0;
+        color: var(--blue);
+        border: none;
+  
+        &:hover {
+          color: #0052ab;
+          text-decoration: underline;
+        }
+      }
+  
+    }
+  
+    main {
+      padding: 7.5px;
+  
+      h1 {
+        background: linear-gradient(to left, #a8e063 20%, #56ab2f);
+      }
+  
+      button {
+        border: 2px solid var(--danger);
+        background-color: var(--danger);
+        color: #fff;
+        &:hover {
+          color: var(--danger);
+        }
+      }
+    }
+  }
+  
+  footer {
+    background-color: var(--success);
+  }
+}

@@ -1,0 +1,352 @@
+/* Start of Original Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  scroll-behavior: smooth;
+}
+
+.header {
+  position: relative;
+  background: url("./images/Header_background.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.header img {
+  max-height: 150px;
+}
+
+.accessibility {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  color: #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.4;
+}
+
+.accessibility:hover {
+  opacity: 1
+}
+
+.skip-main {
+  color: #000;
+}
+
+.skip-main:hover {
+  color: #000;
+}
+
+.change-theme button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.change-contrast {
+  display: flex;
+  flex-direction: column;
+  width: 17ch;
+}
+
+.change-contrast label {
+  text-align: center;
+  cursor: pointer;
+}
+
+.change-contrast label svg {
+  width: 12px;
+  padding-bottom: 3px;
+}
+
+.contrast-range {
+  display: none;
+}
+
+#contrast-range {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+#contrast-range:hover {
+  opacity: 1;
+}
+
+#contrast-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 15px;
+  border-radius: 5px;
+  background: var(--primary);
+  cursor: pointer;
+}
+
+#contrast-range::-moz-range-thumb {
+  width: 20px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--primary);
+  cursor: pointer;
+}
+
+.fontSize-controls a, .darkmode-control a {
+  color: #fff;
+  border-radius: 5px;
+  width: 50px;
+}
+
+.fontSize-controls a:hover, .darkmode-control a:hover {
+  text-decoration: none;
+}
+
+.gallery {
+  height: 60vh;
+  background: url("https://images.unsplash.com/photo-1560493676-04071c5f467b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1568&q=80") center center no-repeat;
+  background-size: cover;
+}
+
+.grid-body {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 30px;
+  padding: 30px;
+}
+
+h1, h3 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 22.5px;
+  padding: 7.5px 7.5px 7.5px 15px;
+}
+
+h3 {
+  font-size: 16.5px;
+}
+
+article, main {
+  margin-bottom: 15px;
+}
+
+article {
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  padding: 0 15px;
+  text-align: justify;
+}
+
+article ul {
+  list-style: none;
+}
+
+article li {
+  cursor: pointer;
+}
+
+main button, article button {
+  outline: none;
+  padding: 7.5px;
+  border-radius: 5px;
+  opacity: 0.9;
+}
+
+article button:hover, main button:hover {
+  background-color: #fff;
+}
+
+button:focus {
+  outline: none;
+}
+
+main button {
+  margin-left: 15px;
+}
+
+footer {
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+/* End of Original Styles */
+
+/* Start of Agriculture Theme */
+.agri-navbar {
+  background: var(--success);
+}
+
+.agri-h1, .agri-h3 {
+  background: linear-gradient(to left, #a8e063 20%, #56ab2f);
+}
+
+.agri-article, .agri-main {
+  padding: 7.5px;
+}
+
+.agri-button {
+  border: 2px solid var(--danger);
+  background-color: var(--danger);
+  color: #fff;
+}
+
+.agri-button:hover {
+  color: var(--danger);
+}
+
+.agri-ul {
+  padding: 0 7.5px;
+  background-color: #fff;
+}
+
+.agri-li {
+  padding: 4.5px 0;
+  color: var(--blue);
+  border: none;
+}
+
+.agri-li:hover {
+  color: #0052ab;
+  text-decoration: underline;
+}
+
+.agri-footer {
+  background-color: var(--success);
+}
+/* End of Agriculture Theme */
+
+/* Start of Police Theme */
+.police-navbar {
+  background: #fd7331;
+}
+
+.police-h1, .police-h3 {
+  background: #fd7331;
+  text-transform: uppercase;
+  border-bottom: 3px solid #2e2951;
+}
+
+.police-article, .police-main {
+  padding: 0;
+}
+
+.police-article {
+  box-shadow: none;
+}
+
+.police-ul {
+  padding: 0;
+  margin-top: 15px;
+  background-color: #fff;
+}
+
+.police-li {
+  border: 1px solid #cecece;
+  color: #000;
+  padding: 7.5px 15px;
+}
+
+.police-li:hover {
+  color: #0052ab;
+  text-decoration: underline;
+}
+
+.police-button {
+  border: 2px solid var(--danger);
+  background-color: var(--danger);
+  color: #fff;
+}
+
+.police-button:hover {
+  color: var(--danger);
+}
+
+.police-footer {
+  background-color: #fd7331;
+}
+/* End of Police Theme */
+
+/* Start of MSPDCL Theme */
+.mspdcl-navbar {
+  background: url("images/menu.png") repeat-x;
+}
+
+.mspdcl-h1 {
+  background: url("images/menu.png") repeat-x;
+  border-radius: 5px;
+}
+
+.mspdcl-article {
+  box-shadow: none;
+}
+
+.mspdcl-h3 {
+  background: url("images/label.png") repeat-y;
+  border: none;
+  text-transform: initial;
+  font-weight: 400;
+}
+
+.mspdcl-ul {
+  margin-top: -22.5px;
+  margin-left: 7.5px;
+  box-shadow: 0 0 3px 1px rgb(0 0 0 / 20%);
+  padding: 22.5px 0 1.5px;
+}
+
+.mspdcl-li {
+  border: none;
+  color: #337ab7;
+  margin: 7.5px;
+  border-radius: 5px;
+  padding: 7.5px;
+  background-color: #fff;
+}
+
+.mspdcl-li:hover {
+  color: #0052ab;
+  text-decoration: none;
+  background: #eee;
+}
+
+.mspdcl-button {
+  border: 2px solid var(--success);
+  background-color: var(--success);
+  color: #fff;
+}
+
+.mspdcl-button:hover {
+  color: var(--sucess);
+}
+
+.mspdcl-footer {
+  background-color: #0d72b1;
+}
+/* End of MSPDCL Theme */
+
+/* Javascript Styles */
+.show {
+  display: block;
+}
+
+.dark-mode {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.invert {
+  filter: invert(1) hue-rotate(180deg);
+}
