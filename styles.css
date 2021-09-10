@@ -155,9 +155,6 @@ html {
   border-radius: 5px;
   opacity: 0.9;
 }
-.grid-body main button:hover {
-  background-color: #fff;
-}
 .grid-body main button:focus {
   outline: none;
 }
@@ -168,6 +165,16 @@ footer {
   text-align: center;
 }
 
+.mspdcl .grid-body main button, .mspdcl .grid-body article button, .police .grid-body main button, .police .grid-body article button, .agri .grid-body main button, .agri .grid-body article button {
+  border: 2px solid var(--danger);
+  background-color: var(--danger);
+  color: #fff;
+}
+.mspdcl .grid-body main button:hover, .mspdcl .grid-body article button:hover, .police .grid-body main button:hover, .police .grid-body article button:hover, .agri .grid-body main button:hover, .agri .grid-body article button:hover {
+  color: var(--danger);
+  background-color: #fff;
+}
+
 .agri .navbar {
   background: var(--success);
 }
@@ -176,14 +183,6 @@ footer {
 }
 .agri .grid-body article h3 {
   background: linear-gradient(to left, #a8e063 20%, #56ab2f);
-}
-.agri .grid-body article button {
-  border: 2px solid var(--danger);
-  background-color: var(--danger);
-  color: #fff;
-}
-.agri .grid-body article button:hover {
-  color: var(--danger);
 }
 .agri .grid-body article ul {
   padding: 0 7.5px;
@@ -204,16 +203,18 @@ footer {
 .agri .grid-body main h1 {
   background: linear-gradient(to left, #a8e063 20%, #56ab2f);
 }
-.agri .grid-body main button {
+.agri footer {
+  background-color: var(--success);
+}
+
+.mspdcl .grid-body main button, .mspdcl .grid-body article button, .police .grid-body main button, .police .grid-body article button, .agri .grid-body article button, .agri .grid-body main button {
   border: 2px solid var(--danger);
   background-color: var(--danger);
   color: #fff;
 }
-.agri .grid-body main button:hover {
+.mspdcl .grid-body main button:hover, .mspdcl .grid-body article button:hover, .police .grid-body main button:hover, .police .grid-body article button:hover, .agri .grid-body article button:hover, .agri .grid-body main button:hover {
   color: var(--danger);
-}
-.agri footer {
-  background-color: var(--success);
+  background-color: #fff;
 }
 
 .police .navbar {
@@ -227,14 +228,6 @@ footer {
   background: #fd7331;
   text-transform: uppercase;
   border-bottom: 3px solid #2e2951;
-}
-.police .grid-body article button {
-  border: 2px solid var(--danger);
-  background-color: var(--danger);
-  color: #fff;
-}
-.police .grid-body article button:hover {
-  color: var(--danger);
 }
 .police .grid-body article ul {
   padding: 0;
@@ -258,16 +251,18 @@ footer {
   text-transform: uppercase;
   border-bottom: 3px solid #2e2951;
 }
-.police .grid-body main button {
-  border: 2px solid var(--danger);
-  background-color: var(--danger);
-  color: #fff;
-}
-.police .grid-body main button:hover {
-  color: var(--danger);
-}
 .police footer {
   background-color: #fd7331;
+}
+
+.mspdcl .grid-body main button, .mspdcl .grid-body article button, .agri .grid-body article button, .agri .grid-body main button, .police .grid-body article button, .police .grid-body main button {
+  border: 2px solid var(--success);
+  background-color: var(--success);
+  color: #fff;
+}
+.mspdcl .grid-body main button:hover, .mspdcl .grid-body article button:hover, .agri .grid-body article button:hover, .agri .grid-body main button:hover, .police .grid-body article button:hover, .police .grid-body main button:hover {
+  color: var(--success);
+  background-color: #fff;
 }
 
 .mspdcl .navbar {
@@ -281,14 +276,6 @@ footer {
   border: none;
   text-transform: initial;
   font-weight: 400;
-}
-.mspdcl .grid-body article button {
-  border: 2px solid var(--success);
-  background-color: var(--success);
-  color: #fff;
-}
-.mspdcl .grid-body article button:hover {
-  color: var(--sucess);
 }
 .mspdcl .grid-body article ul {
   margin-top: -22.5px;
@@ -312,14 +299,6 @@ footer {
 .mspdcl .grid-body main h1 {
   background: url("images/menu.png") repeat-x;
   border-radius: 5px;
-}
-.mspdcl .grid-body main button {
-  border: 2px solid var(--success);
-  background-color: var(--success);
-  color: #fff;
-}
-.mspdcl .grid-body main button:hover {
-  color: var(--sucess);
 }
 .mspdcl footer {
   background-color: #0d72b1;

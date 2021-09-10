@@ -182,10 +182,6 @@ html {
       border-radius: 5px;
       opacity: 0.9;
 
-      &:hover {
-        background-color: #fff;
-      }
-
       &:focus {
         outline: none;
       }
@@ -200,7 +196,7 @@ footer {
 }
 
 // Imports
-@import "agritheme";
-@import "policetheme";
-@import "mspdcltheme";
+@import "greentheme";
+@import "orangetheme";
+@import "bluetheme";
 @import "scriptstyles";
