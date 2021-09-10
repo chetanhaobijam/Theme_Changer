@@ -315,3 +315,13 @@ footer {
 .invert {
   filter: invert(1) hue-rotate(180deg);
 }
+
+@media (max-width: 1200px) {
+  .header .accessibility {
+    justify-content: flex-start;
+    padding: 5px 10px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+  }
+}
