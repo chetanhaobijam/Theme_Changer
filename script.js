@@ -1,7 +1,7 @@
 // VARIABLE DECLARATIONS
-const agriTheme = document.querySelector("#agriTheme");
-const policeTheme = document.querySelector("#policeTheme");
-const mspdclTheme = document.querySelector("#mspdclTheme");
+const greenTheme = document.querySelector("#greenTheme");
+const orangeTheme = document.querySelector("#orangeTheme");
+const blueTheme = document.querySelector("#blueTheme");
 const html = document.querySelector("html");
 const body = document.querySelector("body");
 const decrease = document.querySelector("#fontDecrease");
@@ -21,32 +21,32 @@ let contrastColors = [
 
 // FUNCTIONS
 // Function to add Agri Theme
-const addAgriTheme = () => {
+const addGreenTheme = () => {
   body.classList.add("agri")
 }
 
 // Function to Remove Agri Theme
-const removeAgriTheme = () => {
+const removeGreenTheme = () => {
   body.classList.remove("agri");
 }
 
 // Function to Add Police Theme
-const addPoliceTheme = () => {
+const addOrangeTheme = () => {
   body.classList.add("police");
 }
 
 // Function to Remove Police Theme
-const removePoliceTheme = () => {
+const removeOrangeTheme = () => {
   body.classList.remove("police")
 }
 
 // Function to Add MSPDCL Theme
-const addMspdclTheme = () => {
+const addBlueTheme = () => {
   body.classList.add("mspdcl");
 }
 
 // Function to remove MSPDCL Theme
-const removeMspdclTheme = () => {
+const removeBlueTheme = () => {
   body.classList.remove("mspdcl");
 }
 
@@ -90,20 +90,6 @@ function setFontSize(size) {
     $(".actualSize").html(size);
 }
 
-// Function to Reduce Contrast
-const reduceContrast = (factor) => {
-  let bodyColor = body.style.background;
-  let index = contrastColors.indexOf(bodyColor);
-  body.style.background = contrastColors[index - factor];
-}
-
-// Function to Add Contrast
-const addContrast = (factor) => {
-  let bodyColor = body.style.background;
-  let index = contrastColors.indexOf(bodyColor);
-  body.style.background = contrastColors[index + factor];
-}
-
 // Function to Change Contrast Based on Range Input
 const changeContrastOnRange = () => {
   let rangeValue = contrastRangeInput.value;
@@ -140,25 +126,25 @@ const changeContrastOnRange = () => {
 // =======================================================
 
 // EVENT LISTENERS
-// When clicked at Police Theme
-agriTheme.addEventListener("click", () => {
-  removePoliceTheme();
-  removeMspdclTheme();
-  addAgriTheme();
+// When clicked at Green Theme
+greenTheme.addEventListener("click", () => {
+  removeOrangeTheme();
+  removeBlueTheme();
+  addGreenTheme();
 });
 
-// When clicked at Agri Theme
-policeTheme.addEventListener("click", () => {
-  removeAgriTheme();
-  removeMspdclTheme();
-  addPoliceTheme();
+// When clicked at Orange Theme
+orangeTheme.addEventListener("click", () => {
+  removeGreenTheme();
+  removeBlueTheme();
+  addOrangeTheme();
 });
 
-// When clicked at MSPDCL Theme
-mspdclTheme.addEventListener("click", () => {
-  removeAgriTheme();
-  removePoliceTheme();
-  addMspdclTheme();
+// When clicked at Blue Theme
+blueTheme.addEventListener("click", () => {
+  removeGreenTheme();
+  removeOrangeTheme();
+  addBlueTheme();
 })
 
 // Change the Contrast According to the Range
@@ -189,5 +175,5 @@ darkModeBtn.addEventListener("click", () => {
 
 
 // START UP FUNCTION
-addAgriTheme();
+addGreenTheme();
 body.style.background = contrastColors[4];
