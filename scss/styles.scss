@@ -16,6 +16,8 @@ html {
   
   img {
     max-height: 150px;
+    max-width: 600px;
+    padding: 10px;
   }
 
   .accessibility {
@@ -24,12 +26,13 @@ html {
     padding: 10px;
     color: #000;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 3px;
+    right: 3px;
     opacity: 0.4;
 
     &:hover {
       opacity: 1;
+      background-color: #ffffff8f;
     }
 
     .skip-main {
@@ -99,10 +102,17 @@ html {
     }
 
     .fontSize-controls, .darkmode-control {
+      display: flex;
+      gap: 10px;
+
       a {
         color: #fff;
         border-radius: 5px;
         width: 50px;
+        max-height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         &:hover {
           text-decoration: none;
@@ -200,4 +210,6 @@ footer {
 @import "orangetheme";
 @import "bluetheme";
 @import "scriptstyles";
+@import "laptop";
 @import "tablet";
+@import "mobile";
