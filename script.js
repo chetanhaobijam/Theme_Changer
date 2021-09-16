@@ -22,32 +22,32 @@ let contrastColors = [
 // FUNCTIONS
 // Function to add Agri Theme
 const addGreenTheme = () => {
-  body.classList.add("agri")
+  body.classList.add("green")
 }
 
 // Function to Remove Agri Theme
 const removeGreenTheme = () => {
-  body.classList.remove("agri");
+  body.classList.remove("green");
 }
 
 // Function to Add Police Theme
 const addOrangeTheme = () => {
-  body.classList.add("police");
+  body.classList.add("orange");
 }
 
 // Function to Remove Police Theme
 const removeOrangeTheme = () => {
-  body.classList.remove("police")
+  body.classList.remove("orange")
 }
 
 // Function to Add MSPDCL Theme
 const addBlueTheme = () => {
-  body.classList.add("mspdcl");
+  body.classList.add("blue");
 }
 
 // Function to remove MSPDCL Theme
 const removeBlueTheme = () => {
-  body.classList.remove("mspdcl");
+  body.classList.remove("blue");
 }
 
 // Function to Increase or Decrease Font Size

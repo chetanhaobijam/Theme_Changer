@@ -176,125 +176,125 @@ footer {
   text-align: center;
 }
 
-.mspdcl .grid-body main button, .mspdcl .grid-body article button, .police .grid-body main button, .police .grid-body article button, .agri .grid-body main button, .agri .grid-body article button {
+.blue .grid-body main button, .blue .grid-body article button, .orange .grid-body main button, .orange .grid-body article button, .green .grid-body main button, .green .grid-body article button {
   border: 2px solid var(--danger);
   background-color: var(--danger);
   color: #fff;
 }
-.mspdcl .grid-body main button:hover, .mspdcl .grid-body article button:hover, .police .grid-body main button:hover, .police .grid-body article button:hover, .agri .grid-body main button:hover, .agri .grid-body article button:hover {
+.blue .grid-body main button:hover, .blue .grid-body article button:hover, .orange .grid-body main button:hover, .orange .grid-body article button:hover, .green .grid-body main button:hover, .green .grid-body article button:hover {
   color: var(--danger);
   background-color: #fff;
 }
 
-.agri .navbar {
+.green .navbar {
   background: var(--success);
 }
-.agri .grid-body article {
+.green .grid-body article {
   padding: 7.5px;
 }
-.agri .grid-body article h3 {
+.green .grid-body article h3 {
   background: linear-gradient(to left, #a8e063 20%, #56ab2f);
 }
-.agri .grid-body article ul {
+.green .grid-body article ul {
   padding: 0 7.5px;
   background-color: #fff;
 }
-.agri .grid-body article li {
+.green .grid-body article li {
   padding: 4.5px 0;
   color: var(--blue);
   border: none;
 }
-.agri .grid-body article li:hover {
+.green .grid-body article li:hover {
   color: #0052ab;
   text-decoration: underline;
 }
-.agri .grid-body main {
+.green .grid-body main {
   padding: 7.5px;
 }
-.agri .grid-body main h1 {
+.green .grid-body main h1 {
   background: linear-gradient(to left, #a8e063 20%, #56ab2f);
 }
-.agri footer {
+.green footer {
   background-color: var(--success);
 }
 
-.mspdcl .grid-body main button, .mspdcl .grid-body article button, .police .grid-body main button, .police .grid-body article button, .agri .grid-body article button, .agri .grid-body main button {
+.blue .grid-body main button, .blue .grid-body article button, .orange .grid-body main button, .orange .grid-body article button, .green .grid-body article button, .green .grid-body main button {
   border: 2px solid var(--danger);
   background-color: var(--danger);
   color: #fff;
 }
-.mspdcl .grid-body main button:hover, .mspdcl .grid-body article button:hover, .police .grid-body main button:hover, .police .grid-body article button:hover, .agri .grid-body article button:hover, .agri .grid-body main button:hover {
+.blue .grid-body main button:hover, .blue .grid-body article button:hover, .orange .grid-body main button:hover, .orange .grid-body article button:hover, .green .grid-body article button:hover, .green .grid-body main button:hover {
   color: var(--danger);
   background-color: #fff;
 }
 
-.police .navbar {
+.orange .navbar {
   background: #fd7331;
 }
-.police .grid-body article {
+.orange .grid-body article {
   padding: 0;
   box-shadow: none;
 }
-.police .grid-body article h3 {
+.orange .grid-body article h3 {
   background: #fd7331;
   text-transform: uppercase;
   border-bottom: 3px solid #2e2951;
 }
-.police .grid-body article ul {
+.orange .grid-body article ul {
   padding: 0;
   margin-top: 15px;
   background-color: #fff;
 }
-.police .grid-body article li {
+.orange .grid-body article li {
   border: 1px solid #cecece;
   color: #000;
   padding: 7.5px 15px;
 }
-.police .grid-body article li:hover {
+.orange .grid-body article li:hover {
   color: #0052ab;
   text-decoration: underline;
 }
-.police .grid-body main {
+.orange .grid-body main {
   padding: 0;
 }
-.police .grid-body main h1 {
+.orange .grid-body main h1 {
   background: #fd7331;
   text-transform: uppercase;
   border-bottom: 3px solid #2e2951;
 }
-.police footer {
+.orange footer {
   background-color: #fd7331;
 }
 
-.mspdcl .grid-body main button, .mspdcl .grid-body article button, .agri .grid-body article button, .agri .grid-body main button, .police .grid-body article button, .police .grid-body main button {
+.blue .grid-body main button, .blue .grid-body article button, .green .grid-body article button, .green .grid-body main button, .orange .grid-body article button, .orange .grid-body main button {
   border: 2px solid var(--success);
   background-color: var(--success);
   color: #fff;
 }
-.mspdcl .grid-body main button:hover, .mspdcl .grid-body article button:hover, .agri .grid-body article button:hover, .agri .grid-body main button:hover, .police .grid-body article button:hover, .police .grid-body main button:hover {
+.blue .grid-body main button:hover, .blue .grid-body article button:hover, .green .grid-body article button:hover, .green .grid-body main button:hover, .orange .grid-body article button:hover, .orange .grid-body main button:hover {
   color: var(--success);
   background-color: #fff;
 }
 
-.mspdcl .navbar {
+.blue .navbar {
   background: url("images/menu.png") repeat-x;
 }
-.mspdcl .grid-body article {
+.blue .grid-body article {
   box-shadow: none;
 }
-.mspdcl .grid-body article h3 {
+.blue .grid-body article h3 {
   background: url("images/label.png") repeat-y;
   border: none;
   text-transform: initial;
   font-weight: 400;
 }
-.mspdcl .grid-body article ul {
+.blue .grid-body article ul {
   margin-top: -22.5px;
   margin-left: 7.5px;
   box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
   padding: 22.5px 0 1.5px;
 }
-.mspdcl .grid-body article li {
+.blue .grid-body article li {
   border: none;
   color: #337ab7;
   margin: 7.5px;
@@ -302,16 +302,16 @@ footer {
   padding: 7.5px;
   background-color: #fff;
 }
-.mspdcl .grid-body article li:hover {
+.blue .grid-body article li:hover {
   color: #0052ab;
   text-decoration: none;
   background: #eee;
 }
-.mspdcl .grid-body main h1 {
+.blue .grid-body main h1 {
   background: url("images/menu.png") repeat-x;
   border-radius: 5px;
 }
-.mspdcl footer {
+.blue footer {
   background-color: #0d72b1;
 }
 
